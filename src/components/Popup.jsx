@@ -7,7 +7,7 @@ function Popup() {
   const [selector, setSelector] = useState("");
   const [data, setData] = useState([]);
 
-  // Extract text using CSS selector
+  // Extracting text using CSS selector
   const handleExtract = () => {
     if (!selector.trim()) return alert("Enter a valid CSS selector");
 
@@ -29,7 +29,7 @@ function Popup() {
     });
   };
 
-  // Export scraped data as CSV
+  // Exporting scraped data as CSV
   const exportCSV = () => {
     if (!data.length) return;
 
