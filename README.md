@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Data-Scraping-Extension-Tool
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A **Chrome Extension** that allows users to scrape text from webpages and export it as a CSV file. Built with **React.js**, **content scripts**, and **Chrome Manifest V3**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## **Features**
 
-### `npm start`
+- Select elements on a webpage using **CSS selectors**.
+- Scrape text data and preview it in the popup.
+- Export scraped data as a **CSV file**.
+- Hover highlight feature for easier element selection.
+- Simple, clean, and intuitive React-based UI.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## **Technologies Used**
 
-### `npm test`
+- **Frontend:** React.js  
+- **Chrome APIs:** `scripting`, `downloads`, `activeTab`  
+- **Build Tools:** react-scripts, npm  
+- **Other:** JavaScript, HTML, CSS
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## **Installation / How to Load in Chrome**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/data-scraper-extension.git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Navigate into the project directory and install dependencies:
+cd data-scraper-extension
+npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Build the React app:
+npm run build
 
-### `npm run eject`
+This will also copy necessary extension files into extension-dist/.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Open Chrome and go to chrome://extensions/.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. Enable Developer Mode (top-right).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+6. Click Load unpacked and select the extension-dist/ folder.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+7. Pin the extension to the toolbar for easy access.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Usage
+1.Open any webpage you want to scrape.
+2.Click the Data Scraper Extension icon.
+3.Enter a valid CSS selector in the input box.
+4.Click Extract to view the scraped text.
+5.Click Export CSV to download the data.
