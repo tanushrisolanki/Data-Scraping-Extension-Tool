@@ -30,11 +30,11 @@ A **Chrome Extension** that allows users to scrape text from webpages and export
    git clone https://github.com/your-username/data-scraper-extension.git
 
 2. Navigate into the project directory and install dependencies:
-cd data-scraper-extension
-npm install
+   cd data-scraper-extension
+   npm install
 
-3. Build the React app:
-npm run build
+4. Build the React app:
+   npm run build
 
 This will also copy necessary extension files into extension-dist/.
 
@@ -48,6 +48,7 @@ This will also copy necessary extension files into extension-dist/.
 
 
 Usage
+
 1.Open any webpage you want to scrape.
 2.Click the Data Scraper Extension icon.
 3.Enter a valid CSS selector in the input box.
